@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Parisienne&family=Patua+One&family=Press+Start+2P&family=Roboto:wght@300;400&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Cervezinha</title>
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+<!--Logo-->
+            <div id="logo">
+                <img src="img/pngwing.com.png" height="60px" id="logo">
+            
+            </div>
+<!--Menu-->
+            <nav id="menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+                <ul>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="brev-h.html">Historia</a></li>
+                    <li><a href="prod.html">Productos</a></li>
+                    <li><a href="index.html">Home</a></li> 
+                </ul>
+            </nav>
+        </header>
+<!--Cuerpo-->
+    <main>
+        <h2 class="animate__animated animate__pulse">Formulario de Contacto</h2>
+        <div class="mainform">
+            <form action="" method="POST" id="form">
+                <label for="nombre" >Nombre: </label> 
+                <input type="text" name="nombre" id="name" > <br> 
+                
+                <label for="email">E mail: </label> 
+                <input type="Email" name="email" id="email" > <br> 
+                
+                <label for="asunto">Asunto: </label> 
+                <input type="text" name="asunto" id="asunto" > <br>
+
+                <label for="Mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escriba su mensaje aqui"></textarea> <br>
+                
+                <button class="btn" type="submit" onclick="return enviarForm();">Enviar</button>
+                <div class="advertencia" id="advertencia"></div>
+            </form>
+        </div>
+        <h2 class="animate__animated animate__pulse">¿Donde estamos?</h2>
+        <div >
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3077.9311686414685!2d-58.411365261866216!3d-34.58936491848142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1652563988907!5m2!1ses!2sar" 
+            width="600" height="450" style="border:0;" 
+            allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+<!--Footer-->
+        <footer class="footer">
+            <div class="redes">
+                <div><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div> &nbsp;&nbsp;
+                <div><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div> &nbsp;&nbsp;
+                <div><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></div> &nbsp;&nbsp;
+            </div>
+            <div>
+                <p>Todos los derechos Reservados ®</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./JS/validacion.js"></script>
+</body>
+</html>

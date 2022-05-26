@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    border:0;
+    font-family: 'Patua One', 'Roboto' , 'Times New Roman' ;
+}
+
+body {
+    background-color:  #333;
+    color: #5c2018;
+}
+div {
+    text-align: center;
+}
+/*------HEADER------*/
+#logo{
+    padding-left: 0.5em;
+}
+.container {
+    background-color: #fbeec1;
+    display:flex;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.header {
+    display:flex;
+    width: 100%;
+    height: 10%;
+    align-items:center;
+    justify-content:space-between;
+    background-color:  #f28e1c;
+    text-align: right;
+    text-decoration: none;
+    border:solid #bc4639;
+    border-bottom-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em ;
+}
+.checkbtn {
+    font-size: 30px;
+    color:white;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    display:none;
+}
+#check{
+    display:none;
+}
+.header .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+li {
+    padding: 0.5em;
+    float:right;
+    list-style:none;
+}
+li a {
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #333;
+}
+
+
+/*-----CONTENIDO------*/
+
+.main {
+    font-size: 1.5rem;
+    background-color: #fbeec1;
+    text-align: justify;
+    padding:0 10em;
+}
+.main:first-child:hover {
+    animation-play-state: initial;
+    animation-duration: 1.5s;
+    background-color: aqua;
+}
+.main-flex{
+    justify-content: center;
+    display:flex;
+}
+#center_logo{
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #bc4639;
+    width: 300px;
+    height: 300px;
+}
+.granos{
+    display:flex;
+    flex-direction:row;
+}
+.img-redonda{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+h3{
+    text-align: center;
+    margin: 1.5em 3em 2em 3em;
+}
+h4{
+    text-align: center;
+    margin:1.2em 3em 3em 3em;
+}
+
+/*poductos en index*/
+.prod{
+    display:flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+.prod1{
+    width: 200px;
+    height: 200px;
+    padding:0;
+    margin:70px;
+}
+
+
+/*------FORMULARIO------*/
+.mainform{
+    display:flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 5%;
+} 
+input{
+    width: 100%;
+    border: 3px solid #5c2018;
+    border-radius: 15px ;
+}
+label{
+    text-align:start;
+}
+textarea {
+    resize: vertical;
+    border: 3px solid #5c2018;
+    border-radius: 15px ;
+}
+.mapa iframe{
+    border-radius: 15px ;
+}
+
+.btn{
+    border-radius: 15px;
+    border:solid #5c2018;
+    color:#fbeec1;
+    background-color: #f28e1c;
+    width: 5em;
+    height: 3em;
+}
+form{
+    text-align: center;
+}
+/*letras
+intentar despues*/
+.cervezinha {
+    font-family: 'Fredoka One' , 'Patua One', 'Roboto' , 'Times New Roman' ;
+    font-weight:bold;
+    font-size: 5em;
+    background-image: url(./Img/granos-volando.jpg);
+    background-color: transparent;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #333;
+}  
+.main:first-child{
+    padding-top:2em;
+    padding-bottom:3.5em;
+}
+h1{
+    text-align: center;
+    color:rgba(0, 0, 0, 0.8);
+    font-size:4em;
+}
+.tarj-i {
+    float:left;
+    width: 25%;
+    margin:20px;
+    border-radius: 5px;
+    overflow:hidden;
+    background-color: #5c2018;
+}
+.tarj-d {
+    float:right;
+    width: 25%;
+    margin:20px;
+    border-radius: 5px;
+    overflow:hidden;
+    background-color: #5c2018;
+}
+.tarj-c {
+    width: 100%;
+    margin:20px;
+    border-radius: 5px;
+    overflow:hidden;
+    background-color: #5c2018;
+}
+.img{
+    margin-top: 0.4em;
+}
+.tarj-content {
+    font-size: 0.7em;
+    color:rgba(255, 255, 255, 0.75);
+    margin-bottom: 0.3em;
+}
+
+/*-----CONTACTO FINAL INDEX-----*/
+
+.cont{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+.phone{
+    margin-left:7em;
+}
+.mail{
+    margin-left:6em;
+}
+#mailto{
+    text-decoration: none;
+    color:#5c2018;
+    font-size: 7em;
+}
+
+/*-----FOOTER-----*/
+.footer {
+    display: flex;
+    text-decoration: none;
+    justify-content:space-between;
+    margin-top:0.5em;
+    background-color: #f28e1c;
+    border:solid #bc4639;
+    border-top-left-radius: 0.7em;
+    border-top-right-radius: 0.7em ;
+}
+.footer .redes{
+    display: flex;
+    justify-content:flex-start;
+    padding: 0.3em;
+    font-size: 1.5em;
+}
+.redes a {
+    color:#fbeec1;
+}
+.redes a:visited {
+    color:rgba(0, 0, 0, 0.5)
+}
+.redes a:hover{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+@media screen and (max-width: 1080px) {
+    .main{
+        font-size: 1.5rem;
+        padding:0 7em}
+    .main h1{
+        font-size: 2.7em ;
+    }
+    .tarj-d{
+        margin:15px;
+        width: 45%;
+    }
+    .tarj-i{
+        margin:15px;
+        width: 45%;
+        }
+    .tarj-c{
+        margin: 15px;
+        }
+    .tarj-content{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 720px ){
+    .main{
+        font-size: 1rem;
+        padding:0 5em}
+    .main > div >h1{
+        font-size: 3.5em ;
+    }
+    /*MENU DESPLEGABLE*/
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #5c2018;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul {
+        left:0;
+    }
+    /*FIN MENU DESPLEGABLE*/
+    .main-flex{
+        display: none;
+    }
+    #menu {font-size: 1em;}
+    .tarj-d{
+        margin:10px;
+        width: 35%;
+    }
+    .tarj-i{
+        margin:10px;
+        width: 35%;
+    }
+    .tarj-c{
+        margin: 10px;
+    }
+    
+    .tarj-content{
+        font-size: 0.5em;
+    }
+    .granos .img-redonda{
+        width:10em;
+        height: 10em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    .prod{
+        align-items: center;
+    }
+    .prod1 a .img-redonda{
+        width:100%;
+        height: 100%;
+    }
+    .prod1{
+        width: 5em;
+        height: 5em;
+        padding: 0;
+        margin: 0;
+    }
+    .phone{
+        margin:0
+    }
+    .mail{
+        margin-left:4em;
+    }
+    /*mapa*/
+    .mapa{
+        width: 80%;
+        height: 80%;
+    }
+    /*footer*/
+    .redes > div a{
+        font-size: 0.7em;
+    }
+    footer > div > p{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .main{
+        font-size: 0.7rem;
+        padding:0 2.5em}
+    .main h1{
+        font-size: 2em ;}
+
+        .tarj-d{
+            margin:7px;
+            width: 40%;
+        }
+        .tarj-i{
+            margin:7px;
+            width: 40%;
+        }
+        .tarj-c{
+            margin: 7px;
+        }
+        .tarj-content{
+            font-size: 0.3em;
+        }
+}
